@@ -1,0 +1,19 @@
+<dl class="cats">
+  <dt>Categories:</dt>
+  {% for category in categories %}
+  <dd>
+    <a href="/category#{{ category | lower }}">{{ category }}</a>
+    {% if !loop.last %}| {% endif %}
+  </dd>
+  {% endfor %}
+</dl>
+
+<dl class="tags">
+  <dt>Tags:</dt>
+  {% for tag in tags %}
+  <dd>
+    <a href="/tag#{{ tag | lower }}">{{ tag }}</a>
+    {% if !loop.last %}| {% endif %}
+  </dd>
+  {% endfor %}
+</dl>

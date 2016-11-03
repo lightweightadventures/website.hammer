@@ -1,0 +1,57 @@
+===================================================================================================
+
+HEADER — represents the "header" of a document or section of a document.
+         The header element is typically used to group a set of h1–h6 elements to mark up a page's
+         title with its subtitle or tagline.
+         Header elements may, however, contain more than just the section's headings
+         and subheadings, e.g., version history information or publication date.
+
+===================================================================================================
+
+HGROUP — used to group a set of h1–h6 elements when the heading has multiple levels, such as
+         subheadings, alternative titles, or taglines.
+
+===================================================================================================
+
+NAV — section containing links to other documents or to parts within the current document.
+      Only groups of primary navigation links.
+      In particular, it is common for footers to have a list of links to various key parts
+      of a site, but the footer element is more appropriate in such cases.
+
+===================================================================================================
+
+ARTICLE — represents a component of a page that consists of a self-contained composition in a
+          document, page, application, or site and that is intended to be independently
+          distributable or reusable, e.g. in syndication.
+          Typically has a heading (often in a header element), and sometimes a footer.
+          For content that makes sense on its own.
+
+===================================================================================================
+
+SECTION — Section is a blob of content that you could store as an individual record in a database.
+          The section element represents a generic document or application section…The section
+          element is not a generic container element.
+          With very few exceptions, section should not be used if there is no natural heading for it.
+          Make certain that you don’t really need an article.
+          Do not use to demarcate the main content area from the nav, header, footer etc...
+          These are jobs for div, not section.
+
+===================================================================================================
+
+ASIDE — When used WITHIN an article element, the contents should be specifically related to that
+        article (e.g., a glossary).
+        When used outside of an article element, the contents should be related to the site
+        (e.g., a blogroll, groups of additional navigation, and even advertising if that content
+        is related to the page).
+
+===================================================================================================
+
+FOOTER — typically contains metadata about its enclosing section, such as who wrote it, links to
+         related documents, copyright data, etc. Contact information for the section given in a
+         footer should be marked up using the address element.
+
+======================================================================================================================
+
+NOTE — 	<article> = An independent, self-contained block of related content.
+		<section> = Block of related content.
+		<div> = Block of content.

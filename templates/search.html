@@ -1,0 +1,31 @@
+{% extends 'layouts/default.html' %} {% block title %} Search | {{ site.title }}{% endblock %} {% block content %}
+
+<article class="search page">
+  <header>
+    <h1>Search</h1>
+  </header>
+
+  <section class="search">
+
+    <p>
+      <input id="inputSearch" placeholder="Search for post title..." />
+    </p>
+
+    <ul id="results">
+    </ul>
+  </section>
+
+  <footer class="cats-tags">
+    {% include "includes/cats-tags.html" %}
+    <!-- authour: whoevs -->
+    <!-- share this: facebook | twitter | wherevs -->
+
+    <!--
+    From Google Analytics could add:
+    <p>Popular search terms: <a href="">Yada</a>, <a href="">Yada</a>, <a href="">Yada</a>, <a href="">Yada</a></p>
+    -->
+    <!-- <small>Search engine powered by fusejs. If you need a more powerful search try this.</small>-->
+  </footer>
+  <div class="end">•</div>
+</article>
+{% endblock %}

@@ -1,0 +1,38 @@
+<!-- Load libraries -->
+<script>
+head.js(
+// Place scripts to be loaded here, in the order the need to be executed
+// Typically libraries are needed first, such as jQuery (as the plugins
+// depend on jQuery to execute). Ensure all filenames you wish
+// head.js to load are surrounded with quotes. Also, this is a list, so
+// ensure that all but the last item are followed by a comma.
+
+{% block content %}
+  "/assets/js/vendor/modernizr-2.6.2-min.js",
+  "/assets/js/vendor/jquery-1.8.3-min.js",
+  "/assets/js/vendor/jquery.scrollTo.min.js",
+  "/assets/js/nav-toggle.min.js",
+
+  {% if slug == 'contact' %}
+  "/assets/js/google-maps.js",
+  {% endif %}
+
+  {% if slug == 'search' %}
+  "/assets/js/search.js",
+  "/assets/js/fuse.js",
+  {% endif %}
+
+  "/assets/js/dropcaps.js",
+  "/assets/js/bundle.js",
+  "/assets/webfonts/ss-social.min.js"
+ {% endblock %}
+);
+
+
+// Google Analytics code
+// Set your account ID appropriately by replacing UA-XXXXX-X
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
