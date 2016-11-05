@@ -1,1 +1,16 @@
-{}
+{
+  "contentful": {
+    "apiKey": "c1ee92ad04b0ca82a9b5c879f517ded1fa01f27df60ace80dee02b9db68b9b08",
+    "spaces": {
+      "Website": {
+        "id": "9eh6ta1b0u4f",
+        "contentTypes": {
+          "pages": "Page",
+          "posts": "Post",
+          "categories": "Category",
+          "tags": "Tag"
+        }
+      }
+    }
+  }
+}
