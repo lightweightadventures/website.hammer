@@ -27,10 +27,12 @@ doctype html
 
 
   body class="blog" id="<!-- $site-id -->"
-    div class="wrap" id="l-wrap"
+    #l-wrap.wrap
       header role="banner" id="l-header" class="banner"
         a href="/" class="logo"
           img src="<!-- @path lightweightadventures.png -->" alt="<!-- $site-description -->"
 
+        <!-- @include _nav-toggle -->
 
-      <!-- @include _nav-toggle -->
+      <!-- @todo Make sure tags wrap properly from _header to _footer -->
+      main id="l-main-content" role="main"

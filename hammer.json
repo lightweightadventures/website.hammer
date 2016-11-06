@@ -1,8 +1,8 @@
 {
   "contentful": {
-    "apiKey": "c1ee92ad04b0ca82a9b5c879f517ded1fa01f27df60ace80dee02b9db68b9b08",
+    "apiKey": "5b63204c8b040f05298cbe241a34b976de323dabd8c10c464cd0fc7b68620961",
     "spaces": {
-      "Website": {
+      "default": {
         "id": "9eh6ta1b0u4f",
         "contentTypes": {
           "pages": "Page",

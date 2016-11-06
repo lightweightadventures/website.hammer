@@ -7,25 +7,20 @@ javascript:
   // head.js to load are surrounded with quotes. Also, this is a list, so
   // ensure that all but the last item are followed by a comma.
 
-  {% block content %}
     "/assets/js/vendor/modernizr-2.6.2-min.js",
     "/assets/js/vendor/jquery-1.8.3-min.js",
     "/assets/js/vendor/jquery.scrollTo.min.js",
     "/assets/js/nav-toggle.min.js",
+    "assets/js/embedly.js",
 
-    {% if slug == 'contact' %}
     "/assets/js/google-maps.js",
-    {% endif %}
 
-    {% if slug == 'search' %}
     "/assets/js/search.js",
     "/assets/js/fuse.js",
-    {% endif %}
 
     "/assets/js/dropcaps.js",
     "/assets/js/bundle.js",
     "/assets/webfonts/ss-social.min.js"
-   {% endblock %}
   );
 
 

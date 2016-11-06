@@ -1,6 +1,9 @@
+/ variable here to have title = "site.title — site.tagline"
+
 <!-- @include _header -->
 
-main id="l-main-content" role="main"
-  h1 HULLO!
+section id="fresh-off-the-press"
+  - for post in contentful.posts
+    <!-- @include _post -->
 
 <!-- @include _footer -->

@@ -1,0 +1,32 @@
+article class="post"
+  header
+    p class="post-date" = post.date
+    h1 class="post-heading"
+      a href="/blog/#{ post.slug }" class="post-permalink" = post.title
+
+
+  div class="post-content"
+    == Kramdown::Document.new("#{post.content}").to_html
+
+
+  footer class="cats-tags"
+    /! {% include "includes/cats-tags.html" %}
+    /! authour: whoevs
+    /! share this: facebook | twitter | wherevs
+
+
+  /! section class="post-comments"
+    header
+      h1 Comments
+
+    article
+      footer
+        p Posted by: Joe Balochio
+      p My comment
+
+    article
+      footer
+        p Posted by: Casey Brock
+      p My comment
+
+  div class="end" •
