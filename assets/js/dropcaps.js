@@ -15,11 +15,6 @@
 
 
 
-// THE REQUIREMENTS
-const Dropcap = require("dropcap.js");
-
-
-// jQUERY
 $(function () {
   function addSpan() {
     const $elements = $('.post-content, .page-content').find('p:first');
