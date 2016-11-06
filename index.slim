@@ -3,7 +3,7 @@
 <!-- @include _header -->
 
 section id="fresh-off-the-press"
-  - for post in contentful.posts
+  - for post in contentful.posts.sort_by{ |p| p.date }.reverse
     <!-- @include _post -->
 
 <!-- @include _footer -->
