@@ -6,9 +6,15 @@
         "id": "9eh6ta1b0u4f",
         "contentTypes": {
           "pages": "Page",
-          "posts": "Post",
           "categories": "Category",
-          "tags": "Tag"
+          "tags": "Tag",
+          "posts": {
+            "name": "Post",
+            "template": "includes/_single.slim",
+            "urlAliasPrefix": "blog",
+            "urlAliasSource": "slug",
+            "renderOnBuild": true
+          }
         }
       }
     }
