@@ -25,10 +25,9 @@ housework
 - create .min files (eg - nav-toggle.min.js) in build and lose in .build/assets/js 
 - DRY up templates
 - crossdomain.xml
-- github hooks
 - review humans.txt
 - 404 url to read 404
-
+- add cloudflare
 
 
 **In ```<head>```**
@@ -61,7 +60,6 @@ housework
 investigate
 -----------
 - browsersync.io
-- contentful/ prismic for client interface
 - vertical rhythm (use http://basehold.it for overlay)
 - grid — neat/susy
 - checkout http://breakpoint-sass.com to handle media queries
@@ -100,6 +98,8 @@ DONE DONE DOOOOOOONE
 - re-write builder in point-free functional style
 - excerpt for search
 - investigate browserify
+- contentful/ prismic for client interface
+- github hooks
 
 
 LINKS

@@ -1,0 +1,8 @@
+Location /about
+  Rewrite /about.html
+  
+Location /contact
+  Rewrite /contact.html
+
+NotFound
+  Rewrite /404.html

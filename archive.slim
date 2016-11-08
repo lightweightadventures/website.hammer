@@ -1,0 +1,31 @@
+/ variable here to have title = "Archive | site.tagline"
+
+<!-- @include _header -->
+
+main id="l-main-content" role="main"
+  article class="archives page"
+    header
+      h1 Archive
+
+  - years = contentful.posts.map{ |p| p.date.year }.uniq
+  - for year in years.sort.reverse
+
+    table class="#{year} archive"
+      thead
+        tr
+          th #{year}
+
+      tbody
+
+      - posts = contentful.posts.select{ |p| p.date.year == year }
+      - for post in posts
+
+        tr
+          td class="post-title"
+            a href="/blog/#{post.slug}.html" #{post.title}
+          td class="post-date" #{post.date.strftime("%d %b %Y")}
+
+  .end •
+
+<!-- @include _sidebar -->
+<!-- @include _footer -->
