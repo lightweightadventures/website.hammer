@@ -1,0 +1,16 @@
+/ variable here to have title = "page.title | site.title"
+
+<!-- @include _header -->
+
+main id="l-main-content" role="main"
+  article class="page"
+    header
+      h1 = page.title
+
+    #page-content
+      == Kramdown::Document.new("#{page.content}").to_html
+
+    .end •
+
+<!-- @include _sidebar -->
+<!-- @include _footer -->
